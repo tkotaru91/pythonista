@@ -1,6 +1,6 @@
 import requests
 
-SHEETY_GET_API = "https://api.sheety.co/b715d9d72a4b58b1dd86fa26f57b1f03/flightDeals/prices/3"
+SHEETY_GET_API = "https://api.sheety.co/sheety/flightDeals/prices/3"
 
 
 class DataManager:
@@ -24,7 +24,7 @@ class DataManager:
                 }
             }
 
-            sheety_put_url = f"https://api.sheety.co/b715d9d72a4b58b1dd86fa26f57b1f03/flightDeals/prices/{row['id']}"
+            sheety_put_url = f"https://api.sheety.co/sheety/flightDeals/prices/{row['id']}"
             reponse = requests.put(sheety_put_url,json=new_data)
 
         # reponse = requests.put(f"{SHEETY_GET_API}/{row['id']}",json=new_data)

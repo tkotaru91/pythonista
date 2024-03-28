@@ -5,7 +5,6 @@ from data_manager import DataManager
 from flight_search import FlightSearch
 from datetime import datetime,timedelta
 
-#headers = {"apikey": "TVEH29p1wb-GqbCkEwVm1vQnSlt7Wj8y"}
 
 #This file will need to use the DataManager,FlightSearch, FlightData, NotificationManager classes to achieve the program requirements.
 
